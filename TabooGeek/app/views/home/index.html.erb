@@ -1,0 +1,9 @@
+<h1>Choisissez le mot à faire deviner</h1>
+
+
+
+<%= form_tag("/game/game", :method => "get") do %>
+  <%= label_tag(:q, "Mot à faire deviner:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("envoyer") %>
+<% end %>
