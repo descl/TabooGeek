@@ -1,14 +1,15 @@
 <h1>Page de jeu</h1>
 
 <h2>Votre mot:  <%= @game %></h2>
-<h2>Les mots interdits</h2>
-
-<ol>
-	<li>toto</li>
-	<li>toto</li>
-	<li>toto</li>
-</ol>
 
 <h2>La requête:  <%= @tQuery %></h2>
 
 <h2>Une reponse RDFs:  <%= @xml %></h2>
+
+<h2>Les mots  interdits</h2>
+
+<ul>
+<% @words.each do |word| %>
+	<li> <%= word.content %></li>
+<% end %>
+</li>

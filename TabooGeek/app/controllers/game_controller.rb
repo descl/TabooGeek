@@ -21,6 +21,7 @@ class GameController < ApplicationController
     endpoint = 'http://157.169.101.31:8080/sparql/'
     response = RestClient.post endpoint, :query => query
     @xml = Nokogiri::XML(response.to_str)
+    @words = @xml.xpath('//sparql:binding[@name = "altLabel"]/sparql:literal', 'sparql' => 'http://www.w3.org/2005/sparql-results#')
     
     
   end
