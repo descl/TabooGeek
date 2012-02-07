@@ -23,7 +23,7 @@
 	</skos:Concept>
 
 	<skos:Concept rdf:about="http://tabooGeek.zouig.org/#Tableur">
-		<skos:broader rdf:about="http://zouig.org/#Informatique />
+		<skos:broader rdf:about="http://zouig.org/#Informatique" />
 		
 		<skos:definition>Un tableur est un programme informatique capable de manipuler des feuilles de calcul.</skos:definition>
 		
@@ -36,7 +36,7 @@
 	</skos:Concept>
 	
 	<skos:Concept rdf:about="http://tabooGeek.zouig.org/#Disque_dur">
-		<skos:broader rdf:about="http://zouig.org/#Informatique />
+		<skos:broader rdf:about="http://zouig.org/#Informatique" />
 		
 		<skos:definition>Un disque dur est une mémoire de masse magnétique utilisée principalement dans les ordinateurs.</skos:definition>
 		
@@ -49,7 +49,7 @@
 	</skos:Concept>
 	
 	<skos:Concept rdf:about="http://tabooGeek.zouig.org/#Clavier">
-		<skos:broader rdf:about="http://zouig.org/#Informatique />
+		<skos:broader rdf:about="http://zouig.org/#Informatique" />
 		
 		<skos:definition>Un clavier d’ordinateur est une interface homme-machine, un périphérique d’entrée de l’ordinateur composé de touches envoyant des instructions à la machine une fois actionnées.</skos:definition>
 		
