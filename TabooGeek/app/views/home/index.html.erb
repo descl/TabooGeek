@@ -1,5 +1,11 @@
 <h1>Choisissez le mot à faire deviner</h1>
 
+<ul>
+<% @words.each do |word| %>
+	<li> <%= word.content %></li>
+<% end %>
+</ul>
+
 <%= form_tag("/game/game", :method => "get") do %>
   <%= label_tag(:q, "Mot à faire deviner:") %>
   <%= text_field_tag(:q) %>
