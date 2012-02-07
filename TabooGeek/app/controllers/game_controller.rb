@@ -7,8 +7,6 @@ class GameController < ApplicationController
   def game
     @game = params[:q]
     
-    
-    
     #query =  "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n"
     #query += "SELECT ?altLabel WHERE { ?concept skos:prefLabel ?altLabel }"
     
