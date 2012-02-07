@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf [
+     <!ENTITY rdf	 "http://www.w3.org/1999/02/22-rdf-syntax-ns">
+     <!ENTITY rdfs       "http://www.w3.org/2000/01/rdf-schema">
+     <!ENTITY owl	 "http://www.w3.org/2006/12/owl2-wml">
+     <!ENTITY skos	 "http://www.w3.org/2004/02/skos/core">
+]>
+
+<rdf:RDF    
+     xmlns:rdf = "&rdf;#"
+     xmlns:skos = "&skos;#"
+     xmlns     = "&skos;#"
+>
+	<skos:Concept rdf:about="http://tabooGeek.zouig.org/#Informatique">
+		<skos:definition>L'informatique est le domaine d'activité scientifique, technique et industriel concernant le traitement automatique de l'information par des machines.</skos:definition>
+		
+		<skos:prefLabel>Informatique</skos:prefLabel>
+		<skos:altLabel>Ordinateur</skos:altLabel>
+		<skos:altLabel>Connexion</skos:altLabel>
+		<skos:altLabel>Serveur</skos:altLabel>
+		<skos:altLabel>Technologie</skos:altLabel>
+		<skos:altLabel>Donnée</skos:altLabel>
+	</skos:Concept>
+
+	<skos:Concept rdf:about="http://tabooGeek.zouig.org/#Tableur">
+		<skos:broader rdf:about="http://zouig.org/#Informatique />
+		
+		<skos:definition>Un tableur est un programme informatique capable de manipuler des feuilles de calcul.</skos:definition>
+		
+		<skos:prefLabel>Tableur</skos:prefLabel>
+		<skos:altLabel>Feuille de calcul</skos:altLabel>
+		<skos:altLabel>Word</skos:altLabel>
+		<skos:altLabel>Excel</skos:altLabel>
+		<skos:altLabel>Programme</skos:altLabel>
+		<skos:altLabel>Tableau</skos:altLabel>
+	</skos:Concept>
+	
+	<skos:Concept rdf:about="http://tabooGeek.zouig.org/#Disque_dur">
+		<skos:broader rdf:about="http://zouig.org/#Informatique />
+		
+		<skos:definition>Un disque dur est une mémoire de masse magnétique utilisée principalement dans les ordinateurs.</skos:definition>
+		
+		<skos:prefLabel>Disque dur</skos:prefLabel>
+		<skos:altLabel>Mémoire</skos:altLabel>
+		<skos:altLabel>Cluster</skos:altLabel>
+		<skos:altLabel>Octet</skos:altLabel>
+		<skos:altLabel>Cylindre</skos:altLabel>
+		<skos:altLabel>ROM</skos:altLabel>
+	</skos:Concept>
+	
+	<skos:Concept rdf:about="http://tabooGeek.zouig.org/#Clavier">
+		<skos:broader rdf:about="http://zouig.org/#Informatique />
+		
+		<skos:definition>Un clavier d’ordinateur est une interface homme-machine, un périphérique d’entrée de l’ordinateur composé de touches envoyant des instructions à la machine une fois actionnées.</skos:definition>
+		
+		<skos:prefLabel>Clavier</skos:prefLabel>
+		<skos:altLabel>Périphérique</skos:altLabel>
+		<skos:altLabel>Touche</skos:altLabel>
+		<skos:altLabel>Interface</skos:altLabel>
+		<skos:altLabel>Plat</skos:altLabel>
+		<skos:altLabel>Souris</skos:altLabel>
+	</skos:Concept>
+	
+</rdf:RDF>
