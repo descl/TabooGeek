@@ -1,6 +1,6 @@
 <h1>Page de jeu</h1>
 
-<h2>Votre mot:  <%= @game %></h2>
+<h2>Votre mot:  <%= @word %></h2>
 
 <h2>La requête:  <%= @tQuery %></h2>
 
@@ -12,4 +12,15 @@
 <% @words.each do |word| %>
 	<li> <%= word['altLabel'] %></li>
 <% end %>
-</li>
+</ul>
+
+
+<h2>A vous de jouer:</h2>
+<%= form_tag("/game/game", :method => "get") do %>
+  <%= label_tag(:indice, "L'indice que vous avez indiqué:") %>
+  <%= text_field_tag(:indice) %>
+  <%= hidden_field_tag(:word,@word) %>
+  <%= submit_tag("envoyer") %>
+<% end %>
+
+<h2>Votre indice donné: <%= @indice %></h2>

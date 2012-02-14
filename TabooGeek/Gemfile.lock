@@ -55,6 +55,7 @@ GEM
     multi_json (1.0.4)
     nokogiri (1.5.0)
     polyglot (0.3.3)
+    ppe-4store-ruby (0.0.3)
     rack (1.4.1)
     rack-cache (1.1)
       rack (>= 0.4)
@@ -109,6 +110,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   jquery-rails
   nokogiri (~> 1.5.0)
+  ppe-4store-ruby (~> 0.0.3)
   rails (= 3.2.1)
   rest-client (~> 1.6.7)
   sass-rails (~> 3.2.3)

@@ -7,7 +7,7 @@
 </ul>
 
 <%= form_tag("/game/game", :method => "get") do %>
-  <%= label_tag(:q, "Mot à faire deviner:") %>
-  <%= text_field_tag(:q) %>
+  <%= label_tag(:word, "Mot à faire deviner:") %>
+  <%= text_field_tag(:word) %>
   <%= submit_tag("envoyer") %>
 <% end %>

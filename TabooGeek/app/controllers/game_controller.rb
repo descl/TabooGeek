@@ -5,16 +5,16 @@ require 'nokogiri'
 
 class GameController < ApplicationController
   def game
-    @game = params[:q]
+    @word = params[:word]
     
     #query =  "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n"
     #query += "SELECT ?altLabel WHERE { ?concept skos:prefLabel ?altLabel }"
     
     query =  "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n"
-    query += "SELECT ?altLabel WHERE {\n"
+    query += "SELECT ?concept ?altLabel WHERE {\n"
     query += "?concept <http://www.w3.org/2004/02/skos/core#prefLabel> ?prefLabel ."
     query += "?concept <http://www.w3.org/2004/02/skos/core#altLabel> ?altLabel ."
-    query += "FILTER regex(?prefLabel, '" + @game.capitalize + "')}"
+    query += "FILTER regex(?prefLabel, '" + @word.capitalize + "')}"
     
     @tQuery = query
     
@@ -22,7 +22,31 @@ class GameController < ApplicationController
  
     store = FourStore::Store.new endpoint
     @words = store.select(query)
-    print @words
-  end
+    
+    
+    @indice = params[:indice]
+    
+    storeZ = FourStore::Store.new endpoint
+    print store
+    print storeZ
+    insert = storeZ.add('http://tabooGeek.zouig.org/#NewRelations', "
+    <"+@words[0]['concept']+"> <http://www.w3.org/2004/02/skos/core#altLabel> '"+@indice+"'");
+    print '---------------'
+    print insert
+    print '---------------'
+    print "
+    <"+@words[0]['concept']+"> <http://www.w3.org/2004/02/skos/core#altLabel> \""+@indice+"\""
+    
+    
+    
+    http.start do |h|
+      request = Net::HTTP::Post.new((@endpoint.path.split("/sparql/")[0] or "") + "/data/")
+      request.set_form_data({
+          'graph' => graph,
+          'data' => Namespace::to_turtle + turtle,
+          'mime-type' => 'application/x-turtle'
+      })
+      response = h.request(request)
+    end
   
 end
