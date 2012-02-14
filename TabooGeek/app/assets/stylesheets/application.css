@@ -11,3 +11,64 @@
  *= require_self
  *= require_tree .
 */
+
+body {
+	margin: 0;
+	font-family: "DejaVu LGC Sans Light", "Century Gothic", "sans-serif";
+	background-color: #5c9d5c;
+	background-image: url("back.png");
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+
+a, a:visited {
+	color: white;
+	text-decoration: none;
+}
+header > div {
+	width: 1004px;
+	padding: 10px;
+	margin: 0 auto;
+}
+
+header {
+	padding-top: 30px;
+	height: 80px;
+	
+	background: #5c9d5c;
+	background: -moz-linear-gradient(top, #000000, #5c9d5c);
+  	background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#5c9d5c));
+  	background: -webkit-linear-gradient(top, #000000, #5c9d5c);
+  	background: -o-linear-gradient(top, #000000, #5c9d5c);
+  	background: -ms-linear-gradient(top, #000000, #5c9d5c);
+  	background: linear-gradient(top, #000000, #5c9d5c);
+}
+
+header h1 {
+	float: left;
+	margin: 0px;
+	margin-left: 200px;
+	
+	font-size: 2.5em;
+	color: white;
+}
+
+header #trollFace {
+	margin-top: -40px;
+	margin-left: 500px;
+	
+	height: 110px;
+	width: 120px;
+	
+	background-image: url("trollFace.png");
+}
+
+#index, #game {
+	padding: 15px;
+	
+	width: 994px;
+	margin: 0 auto;
+	border: solid black 1px;
+	
+	background: white;
+}
