@@ -2,7 +2,7 @@
 
 <ul>
 <% @words.each do |word| %>
-	<li> <%= word.content %></li>
+	<li> <%= word['prefLabel'] %></li>
 <% end %>
 </ul>
 
