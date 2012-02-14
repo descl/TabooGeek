@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'rest_client'
 require 'nokogiri'
-
+require '4store-ruby'
 
 class GameController < ApplicationController
   def game
@@ -20,33 +20,20 @@ class GameController < ApplicationController
     
     endpoint = 'http://157.169.101.31:8080/sparql/'
  
-    store = FourStore::Store.new endpoint
+    store = FourStore::Store.new 'http://157.169.101.31:8080/sparql/'
     @words = store.select(query)
-    
+    #print @words
     
     @indice = params[:indice]
-    
-    storeZ = FourStore::Store.new endpoint
-    print store
-    print storeZ
-    insert = storeZ.add('http://tabooGeek.zouig.org/#NewRelations', "
-    <"+@words[0]['concept']+"> <http://www.w3.org/2004/02/skos/core#altLabel> '"+@indice+"'");
-    print '---------------'
-    print insert
-    print '---------------'
-    print "
-    <"+@words[0]['concept']+"> <http://www.w3.org/2004/02/skos/core#altLabel> \""+@indice+"\""
-    
-    
-    
-    http.start do |h|
-      request = Net::HTTP::Post.new((@endpoint.path.split("/sparql/")[0] or "") + "/data/")
-      request.set_form_data({
-          'graph' => graph,
-          'data' => Namespace::to_turtle + turtle,
-          'mime-type' => 'application/x-turtle'
-      })
-      response = h.request(request)
+    if @indice != nil
+      response = store.add('http://tabooGeek.zouig.org/#NewRelations', "
+        <"+@words[0]['concept']+"> <http://www.w3.org/2004/02/skos/core#altLabel> \""+@indice+"\".
+        "); 
+
+      @words = store.select(query)
+      puts response
     end
+    
+  end
   
 end
