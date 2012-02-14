@@ -11,9 +11,10 @@ class GameController < ApplicationController
     #query += "SELECT ?altLabel WHERE { ?concept skos:prefLabel ?altLabel }"
     
     query =  "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n"
-    query += "SELECT ?concept ?altLabel WHERE {\n"
+    query += "SELECT ?concept ?altLabel ?element ?test WHERE {\n"
     query += "?concept <http://www.w3.org/2004/02/skos/core#prefLabel> ?prefLabel ."
-    query += "?concept <http://www.w3.org/2004/02/skos/core#altLabel> ?altLabel ."
+    query += "?concept <http://TabooGeek.zouig.org/TabooGeek-schema#element> ?element ."
+    query += "?element <http://www.w3.org/2004/02/skos/core#altLabel> ?altLabel ."
     query += "FILTER regex(?prefLabel, '" + @word.capitalize + "')}"
     
     @tQuery = query
@@ -22,7 +23,7 @@ class GameController < ApplicationController
  
     store = FourStore::Store.new 'http://157.169.101.31:8080/sparql/'
     @words = store.select(query)
-    #print @words
+    print @words
     
     @indice = params[:indice]
     if @indice != nil
