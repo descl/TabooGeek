@@ -17,7 +17,7 @@ class GameController < ApplicationController
     query += "?element <http://www.w3.org/2004/02/skos/core#altLabel> ?altLabel ."
     query += "FILTER regex(?prefLabel, '" + @word.capitalize + "')}"
     
-    @tQuery = query
+    #@tQuery = query
     
     endpoint = 'http://157.169.101.31:8080/sparql/'
  
@@ -25,10 +25,10 @@ class GameController < ApplicationController
     @words = store.select(query)
     print @words
     
-    @indice = params[:indice]
-    if @indice != nil
+    indice = params[:indice]
+    if indice != nil
       response = store.add('http://tabooGeek.zouig.org/#NewRelations', "
-        <"+@words[0]['concept']+"> <http://www.w3.org/2004/02/skos/core#altLabel> \""+@indice+"\".
+        <"+@words[0]['concept']+"> <http://www.w3.org/2004/02/skos/core#altLabel> \"" + indice + "\".
         "); 
 
       @words = store.select(query)
