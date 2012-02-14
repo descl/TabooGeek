@@ -1,27 +1,30 @@
 <div id="game">
-	<h1>Page de jeu</h1>
+	<!--<h1>Page de jeu</h1>-->
 	
-	<h2>Votre mot:  <%= @word %></h2>
+	<div id="leftColumn">
+		<p>Votre mot : <span class="bold"><%= @word %></span></p>
+		
+		<p>Temps pour répondre : <span id="chrono"></span></p>
+		<!--<h2>La requête:  <%= @tQuery %></h2>
+		<h2>Une reponse RDFs:  <%= @xml %></h2>-->
+		
+		<%= form_tag("/game/game", :method => "get") do %>
+		  <%= label_tag(:indice, "L'indice que vous avez indiqué :") %>
+		  <%= text_field_tag(:indice) %>
+		  <%= hidden_field_tag(:word,@word) %>
+		  <%= submit_tag("envoyer") %>
+		<% end %>
+	</div>
 	
-	<!--<h2>La requête:  <%= @tQuery %></h2>
-	<h2>Une reponse RDFs:  <%= @xml %></h2>-->
+	<div id="rightColumn">
+		<h2>Les mots  interdits</h2>
+		<ul>
+		<% @words.each do |word| %>
+			<li> <%= word['altLabel'] %></li>
+		<% end %>
+		</ul>
+	</div>
 	
-	<h2>Les mots  interdits</h2>
-	
-	<ul>
-	<% @words.each do |word| %>
-		<li> <%= word['altLabel'] %></li>
-	<% end %>
-	</ul>
-	
-	
-	<h2>A vous de jouer:</h2>
-	<%= form_tag("/game/game", :method => "get") do %>
-	  <%= label_tag(:indice, "L'indice que vous avez indiqué:") %>
-	  <%= text_field_tag(:indice) %>
-	  <%= hidden_field_tag(:word,@word) %>
-	  <%= submit_tag("envoyer") %>
-	<% end %>
-	
+	<p>Créé par Christophe DESCLAUX et Fabien BROSSIER<p>
 	<!--<h2>Votre indice donné: <%= @indice %></h2>-->
 </div>

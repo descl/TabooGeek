@@ -25,6 +25,11 @@ a, a:visited {
 	color: white;
 	text-decoration: none;
 }
+
+.bold {
+	font-weight: bold;
+}
+
 header > div {
 	width: 1004px;
 	padding: 10px;
@@ -32,6 +37,7 @@ header > div {
 }
 
 header {
+	margin-bottom: 30px;
 	padding-top: 30px;
 	height: 80px;
 	
@@ -71,4 +77,24 @@ header #trollFace {
 	border: solid black 1px;
 	
 	background: white;
+}
+
+#game #leftColumn {
+	float: left;
+	width: 500px;
+}
+
+#game #leftColumn #chrono {
+	color: red;
+	font-weight: bold;
+}
+
+#game #rightColumn {
+	margin-left: 500px;
+	text-align: center;
+}
+
+#game > p {
+	clear: left;
+	text-align: center;
 }
