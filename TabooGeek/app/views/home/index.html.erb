@@ -2,15 +2,17 @@
 	<div>
 		<h1>Mot à faire deviner</h1>
 		
-		<!--<ul>
-		<% @words.each do |word| %>
-			<li> <%= word['prefLabel'] %></li>
-		<% end %>
-		</ul>-->
-		
 		<%= form_tag("/game/game", :method => "get") do %>
 		  <%= label_tag(:word, "") %>
-		  <%= text_field_tag(:word) %>
+		  <!--<%= text_field_tag(:word, :list => "valueList") %>-->
+		  <input id="word" name="word" type="text" list="valueList" />
+		  
+		  <datalist id="valueList">
+			<% @words.each do |word| %>
+				<option label="<%= word['prefLabel'] %>" value="<%= word['prefLabel'] %>" />
+			<% end %>
+		  </datalist>
+		  
 		  <%= submit_tag("→") %>
 		<% end %>
 	</div>
