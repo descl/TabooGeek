@@ -12,25 +12,45 @@
  *= require_tree .
 */
 
+/* @header
+ * @index
+ * @game
+ * @footer
+ */
+
+html {
+	height: 100%;
+}
+
 body {
+	height: 100%;
 	margin: 0;
+	padding: 0;
+	
 	font-family: "DejaVu LGC Sans Light", "Century Gothic", "sans-serif";
-	background-color: #5c9d5c;
-	background-image: url("back.png");
-	background-repeat: no-repeat;
-	background-position: top right;
+	background-image: url("fond.png");
+	background-repeat: repeat;
 }
 
 a, a:visited {
-	color: white;
+	outline: none;
+	
+	color: #A6A6A6;
 	text-decoration: none;
+	
+	-webkit-transition: color 1s;
+	-moz-transition: color 1s;
+}
+
+a:hover {
+	color: #FFFFFF;
 }
 
 .bold {
 	font-weight: bold;
 }
 
-header > div {
+header > div, footer > div {
 	width: 1004px;
 	padding: 10px;
 	margin: 0 auto;
@@ -48,20 +68,25 @@ header {
   	background: -o-linear-gradient(top, #000000, #5c9d5c);
   	background: -ms-linear-gradient(top, #000000, #5c9d5c);
   	background: linear-gradient(top, #000000, #5c9d5c);
+  	
+  	border-bottom: solid #FFFFFF 2px;
 }
 
-header h1 {
+header #title {
 	float: left;
 	margin: 0px;
 	margin-left: 200px;
 	
 	font-size: 2.5em;
-	color: white;
+}
+
+header #title a {
+	color: #FFFFFF;
 }
 
 header #trollFace {
 	margin-top: -40px;
-	margin-left: 500px;
+	margin-left: 780px;
 	
 	height: 110px;
 	width: 120px;
@@ -69,32 +94,124 @@ header #trollFace {
 	background-image: url("trollFace.png");
 }
 
+header > div p {
+	font-family: "Arial";
+	
+	float: right;
+	width: 200px;
+	
+	margin: 0;
+	margin-top: -10px;
+	margin-right : 200px;
+	
+	font-size: 1.4em;
+	color: #FFFFFF;
+	
+	-moz-transform: rotate(-12deg);
+	-webkit-transform: rotate(-10deg);
+	-o-transform: rotate(-10deg);
+}
+
 #index, #game {
-	padding: 15px;
+	height: 60%;
 	
 	width: 994px;
 	margin: 0 auto;
-	border: solid black 1px;
+	border: solid #FFFFFF 2px;
 	
-	background: white;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	
+	background-color: #5c9d5c;
+}
+
+#index {
+	text-align: center;
+}
+
+#index > div, #game > div {
+	margin-top: 10%;
+}
+
+#game h2 {
+	margin-top: 0;
+	text-align: center;
 }
 
 #game #leftColumn {
 	float: left;
 	width: 500px;
+	
+	border-right: solid #FFFFFF 2px;
 }
 
-#game #leftColumn #chrono {
-	color: red;
-	font-weight: bold;
+#game #leftColumn ul {
+	list-style-type: none;
+	margin-left: 170px;
+}
+
+#game #leftColumn ul li {
+	font-size: 1.1em;
+	margin-bottom: 5px;
 }
 
 #game #rightColumn {
 	margin-left: 500px;
+}
+
+#game #rightColumn p {
+	margin: 0;
+	margin-bottom: 5px;
+	margin-left: 50px;
+}
+
+#game #rightColumn #chrono {
+	color: #004000;
+	font-weight: bold;
+}
+#game #rightColumn #indForm {
+	text-align: justify;
+	padding-right: 60px;
+	margin-top: 20px;
+}
+
+#game #rightColumn #indForm form{
 	text-align: center;
 }
 
 #game > p {
 	clear: left;
 	text-align: center;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	
+	padding-top: 5px;
+	height: 70px;
+	
+	background: #5c9d5c;
+	background: -moz-linear-gradient(top, #5c9d5c, #000000);
+  	background: -webkit-gradient(linear, left top, left bottom, from(#5c9d5c), to(#000000));
+  	background: -webkit-linear-gradient(top, #5c9d5c, #000000);
+  	background: -o-linear-gradient(top, #5c9d5c, #000000);
+  	background: -ms-linear-gradient(top, #5c9d5c, #000000);
+  	background: linear-gradient(top, #5c9d5c, #000000);
+  	
+  	border-top: solid #FFFFFF 2px;
+}
+
+footer p {
+	color: #FFFFFF;
+}
+
+footer #authors {
+	float: left;
+}
+
+footer #nbWords {
+	float: right;
 }

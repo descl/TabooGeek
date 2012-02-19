@@ -14,24 +14,38 @@
 //= require jquery_ujs
 //= require_tree .
 
-var centi = 0 // initialise les dixtièmes
-var secon = 0 //initialise les secondes
-var minu = 0 //initialise les minutes
+var centi = 0; // initialise les dixtièmes
+var secon = 30; //initialise les secondes
+var minu = 1; //initialise les minutes
+
+var counter;
 
 function chrono(){
-	centi++; //incrémentation des dixièmes de 1
+	var chronoId = document.getElementById('chrono');
+	centi--;
 	
-	if (centi>9) { //si les dixièmes > 9, on les réinitialise à 0 et on incrémente les secondes de 1
-		centi=0;
-		secon++
+	if (centi == 0 && secon == 0 && minu == 0) {
+		chronoId.style.color = "red";
+		chronoId.innerHTML = "0:0:0";
+		
+		clearTimeout(compte);
+		return;
 	}
 	
-	if (secon>59) { //si les secondes > 59, on les réinitialise à 0 et on incrémente les minutes de 1
-		secon=0;
-		minu++
+	if (centi == 0 && secon == 30 && minu == 0) {
+		chronoId.style.color = "orange";
 	}
 	
-	document.getElementById('chrono').innerHTML = minu + ":" + secon + ":" + centi //on affiche le résultat
+	if (centi < 0) {
+		centi = 9;
+		--secon;
+	}
 	
-	compte = setTimeout('chrono()', 100) //la fonction est relancée tous les 10° de secondes
+	if (secon < 0) {
+		secon = 59;
+		--minu;
+	}
+	
+	chronoId.innerHTML = minu + ":" + secon + ":" + centi;
+	counter = setTimeout('chrono()', 100);
 }

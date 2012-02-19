@@ -19,9 +19,9 @@ class GameController < ApplicationController
     
     #@tQuery = query
     
-    endpoint = 'http://157.169.101.31:8080/sparql/'
+    endpoint = 'http://zouig.org:8081/sparql/'
  
-    store = FourStore::Store.new 'http://157.169.101.31:8080/sparql/'
+    store = FourStore::Store.new 'http://zouig.org:8081/sparql/'
     @words = store.select(query)
     print @words
     

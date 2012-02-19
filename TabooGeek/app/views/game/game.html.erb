@@ -1,30 +1,35 @@
 <div id="game">
-	<!--<h1>Page de jeu</h1>-->
+	<div>
 	
-	<div id="leftColumn">
-		<p>Votre mot : <span class="bold"><%= @word %></span></p>
+		<div id="leftColumn">
+			<h2>Les mots  interdits</h2>
+			
+			<ul>
+			<% @words.each do |word| %>
+				<li> <%= word['altLabel'] %></li>
+			<% end %>
+			</ul>
+		</div>
 		
-		<p>Temps pour répondre : <span id="chrono"></span></p>
-		<!--<h2>La requête:  <%= @tQuery %></h2>
-		<h2>Une reponse RDFs:  <%= @xml %></h2>-->
-		
-		<%= form_tag("/game/game", :method => "get") do %>
-		  <%= label_tag(:indice, "L'indice que vous avez indiqué :") %>
-		  <%= text_field_tag(:indice) %>
-		  <%= hidden_field_tag(:word,@word) %>
-		  <%= submit_tag("envoyer") %>
-		<% end %>
-	</div>
+		<div id="rightColumn">
+			<h2>Détails</h2>
+			
+			<p>Le mot à deviner : <span class="bold"><%= @word.capitalize %></span></p>
+			<p>Temps pour répondre : <span id="chrono"></span></p>
+			
+			<div id="indForm">
+				<p>
+					Indique-nous l'indice qui a permis de trouver le mot.
+					Cela améliore notre jeu et contribue à enrichir les concepts liés à l'informatique. 
+				</p>
+				<%= form_tag("/game/game", :method => "get") do %>
+				  <%= label_tag(:indice, "") %>
+				  <%= text_field_tag(:indice) %>
+				  <%= hidden_field_tag(:word, @word) %>
+				  <%= submit_tag("→") %>
+				<% end %>
+			</div>
+		</div>
 	
-	<div id="rightColumn">
-		<h2>Les mots  interdits</h2>
-		<ul>
-		<% @words.each do |word| %>
-			<li> <%= word['altLabel'] %></li>
-		<% end %>
-		</ul>
 	</div>
-	
-	<p>Créé par Christophe DESCLAUX et Fabien BROSSIER<p>
-	<!--<h2>Votre indice donné: <%= @indice %></h2>-->
 </div>
