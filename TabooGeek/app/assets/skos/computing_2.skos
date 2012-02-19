@@ -1,0 +1,384 @@
+<rdf:RDF xmlns:res="http://www.w3.org/2005/sparql-results#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:nodeID="rset">
+<rdf:type rdf:resource="http://www.w3.org/2005/sparql-results#ResultSet" />
+    <res:resultVariable>con</res:resultVariable>
+    <res:resultVariable>prefLab</res:resultVariable>
+    <res:resultVariable>altLab</res:resultVariable>
+    <res:solution rdf:nodeID="r0">
+      <res:binding rdf:nodeID="r0c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Computer_pioneers"/></res:binding>
+      <res:binding rdf:nodeID="r0c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Computer pioneers</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r1">
+      <res:binding rdf:nodeID="r1c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Pre-World_Wide_Web_online_services"/></res:binding>
+      <res:binding rdf:nodeID="r1c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Pre-World Wide Web online services</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r2">
+      <res:binding rdf:nodeID="r2c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Computer-related_introductions_in_1992"/></res:binding>
+      <res:binding rdf:nodeID="r2c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Computer-related introductions in 1992</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r3">
+      <res:binding rdf:nodeID="r3c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Emulation_software"/></res:binding>
+      <res:binding rdf:nodeID="r3c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Emulation software</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r4">
+      <res:binding rdf:nodeID="r4c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:History_of_human%E2%80%93computer_interaction"/></res:binding>
+      <res:binding rdf:nodeID="r4c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">History of human–computer interaction</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r5">
+      <res:binding rdf:nodeID="r5c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:History_of_the_Internet"/></res:binding>
+      <res:binding rdf:nodeID="r5c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">History of the Internet</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r6">
+      <res:binding rdf:nodeID="r6c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:History_of_computer_science"/></res:binding>
+      <res:binding rdf:nodeID="r6c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">History of computer science</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r7">
+      <res:binding rdf:nodeID="r7c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Computer_museums"/></res:binding>
+      <res:binding rdf:nodeID="r7c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Computer museums</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r8">
+      <res:binding rdf:nodeID="r8c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:History_of_computing_hardware"/></res:binding>
+      <res:binding rdf:nodeID="r8c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">History of computing hardware</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r9">
+      <res:binding rdf:nodeID="r9c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Computing_timelines"/></res:binding>
+      <res:binding rdf:nodeID="r9c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Computing timelines</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r10">
+      <res:binding rdf:nodeID="r10c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:History_of_video_games"/></res:binding>
+      <res:binding rdf:nodeID="r10c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">History of video games</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r11">
+      <res:binding rdf:nodeID="r11c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:History_of_computer_companies"/></res:binding>
+      <res:binding rdf:nodeID="r11c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">History of computer companies</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r12">
+      <res:binding rdf:nodeID="r12c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Mathematical_tools"/></res:binding>
+      <res:binding rdf:nodeID="r12c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Mathematical tools</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r13">
+      <res:binding rdf:nodeID="r13c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Retrocomputing"/></res:binding>
+      <res:binding rdf:nodeID="r13c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Retrocomputing</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r14">
+      <res:binding rdf:nodeID="r14c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:History_of_software"/></res:binding>
+      <res:binding rdf:nodeID="r14c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">History of software</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r15">
+      <res:binding rdf:nodeID="r15c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Legacy_systems"/></res:binding>
+      <res:binding rdf:nodeID="r15c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Legacy systems</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r16">
+      <res:binding rdf:nodeID="r16c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Unit_record_equipment"/></res:binding>
+      <res:binding rdf:nodeID="r16c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Unit record equipment</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r17">
+      <res:binding rdf:nodeID="r17c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Internet_slang"/></res:binding>
+      <res:binding rdf:nodeID="r17c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Internet slang</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r18">
+      <res:binding rdf:nodeID="r18c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Language-specific_Linux_distributions"/></res:binding>
+      <res:binding rdf:nodeID="r18c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Language-specific Linux distributions</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r19">
+      <res:binding rdf:nodeID="r19c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Computational_linguistics"/></res:binding>
+      <res:binding rdf:nodeID="r19c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Computational linguistics</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r20">
+      <res:binding rdf:nodeID="r20c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Computer-assisted_translation"/></res:binding>
+      <res:binding rdf:nodeID="r20c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Computer-assisted translation</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r21">
+      <res:binding rdf:nodeID="r21c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Input_methods"/></res:binding>
+      <res:binding rdf:nodeID="r21c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Input methods</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r22">
+      <res:binding rdf:nodeID="r22c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Language_software"/></res:binding>
+      <res:binding rdf:nodeID="r22c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Language software</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r23">
+      <res:binding rdf:nodeID="r23c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Character_encoding"/></res:binding>
+      <res:binding rdf:nodeID="r23c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Character encoding</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r24">
+      <res:binding rdf:nodeID="r24c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Non-English-based_programming_languages"/></res:binding>
+      <res:binding rdf:nodeID="r24c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Non-English-based programming languages</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r25">
+      <res:binding rdf:nodeID="r25c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Internationalization_and_localization"/></res:binding>
+      <res:binding rdf:nodeID="r25c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Internationalization and localization</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r26">
+      <res:binding rdf:nodeID="r26c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Computer_jargon"/></res:binding>
+      <res:binding rdf:nodeID="r26c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Computer jargon</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r27">
+      <res:binding rdf:nodeID="r27c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Machine_translation"/></res:binding>
+      <res:binding rdf:nodeID="r27c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Machine translation</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r28">
+      <res:binding rdf:nodeID="r28c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Video_games_by_language"/></res:binding>
+      <res:binding rdf:nodeID="r28c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Video games by language</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r29">
+      <res:binding rdf:nodeID="r29c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Computing_by_natural_language"/></res:binding>
+      <res:binding rdf:nodeID="r29c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Computing by natural language</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r30">
+      <res:binding rdf:nodeID="r30c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Personal_computers"/></res:binding>
+      <res:binding rdf:nodeID="r30c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Personal computers</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r31">
+      <res:binding rdf:nodeID="r31c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Information_appliances"/></res:binding>
+      <res:binding rdf:nodeID="r31c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Information appliances</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r32">
+      <res:binding rdf:nodeID="r32c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Home_automation"/></res:binding>
+      <res:binding rdf:nodeID="r32c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Home automation</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r33">
+      <res:binding rdf:nodeID="r33c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Electronic_games"/></res:binding>
+      <res:binding rdf:nodeID="r33c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Electronic games</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r34">
+      <res:binding rdf:nodeID="r34c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Home_servers"/></res:binding>
+      <res:binding rdf:nodeID="r34c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Home servers</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r35">
+      <res:binding rdf:nodeID="r35c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Chinese-language_Linux_distributions"/></res:binding>
+      <res:binding rdf:nodeID="r35c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Chinese-language Linux distributions</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r36">
+      <res:binding rdf:nodeID="r36c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Han_character_input"/></res:binding>
+      <res:binding rdf:nodeID="r36c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Han character input</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r37">
+      <res:binding rdf:nodeID="r37c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Chinese_Internet_slang"/></res:binding>
+      <res:binding rdf:nodeID="r37c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Chinese Internet slang</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r38">
+      <res:binding rdf:nodeID="r38c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:CJK_typefaces"/></res:binding>
+      <res:binding rdf:nodeID="r38c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">CJK typefaces</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r39">
+      <res:binding rdf:nodeID="r39c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Chinese_type_styles"/></res:binding>
+      <res:binding rdf:nodeID="r39c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Chinese type styles</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r40">
+      <res:binding rdf:nodeID="r40c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Chinese-language_video_games"/></res:binding>
+      <res:binding rdf:nodeID="r40c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Chinese-language video games</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r41">
+      <res:binding rdf:nodeID="r41c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Process_calculi"/></res:binding>
+      <res:binding rdf:nodeID="r41c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Process calculi</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r42">
+      <res:binding rdf:nodeID="r42c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Unix_process_and_task_management-related_software"/></res:binding>
+      <res:binding rdf:nodeID="r42c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Unix process and task management-related software</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r43">
+      <res:binding rdf:nodeID="r43c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Inter-process_communication"/></res:binding>
+      <res:binding rdf:nodeID="r43c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Inter-process communication</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r44">
+      <res:binding rdf:nodeID="r44c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Process.h"/></res:binding>
+      <res:binding rdf:nodeID="r44c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Process.h</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r45">
+      <res:binding rdf:nodeID="r45c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Massively_multiplayer_online_games"/></res:binding>
+      <res:binding rdf:nodeID="r45c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Massively multiplayer online games</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r46">
+      <res:binding rdf:nodeID="r46c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:File_sharing_networks"/></res:binding>
+      <res:binding rdf:nodeID="r46c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">File sharing networks</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r47">
+      <res:binding rdf:nodeID="r47c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Virtual_reality_communities"/></res:binding>
+      <res:binding rdf:nodeID="r47c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Virtual reality communities</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r48">
+      <res:binding rdf:nodeID="r48c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Distributed_computing_projects"/></res:binding>
+      <res:binding rdf:nodeID="r48c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Distributed computing projects</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r49">
+      <res:binding rdf:nodeID="r49c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Distributed_data_storage"/></res:binding>
+      <res:binding rdf:nodeID="r49c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Distributed data storage</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r50">
+      <res:binding rdf:nodeID="r50c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Grid_computing_projects"/></res:binding>
+      <res:binding rdf:nodeID="r50c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Grid computing projects</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r51">
+      <res:binding rdf:nodeID="r51c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Ambient_intelligence"/></res:binding>
+      <res:binding rdf:nodeID="r51c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Ambient intelligence</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r52">
+      <res:binding rdf:nodeID="r52c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Tracking"/></res:binding>
+      <res:binding rdf:nodeID="r52c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Tracking</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r53">
+      <res:binding rdf:nodeID="r53c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Cloud_standards"/></res:binding>
+      <res:binding rdf:nodeID="r53c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Cloud standards</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r54">
+      <res:binding rdf:nodeID="r54c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Cloud_platforms"/></res:binding>
+      <res:binding rdf:nodeID="r54c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Cloud platforms</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r55">
+      <res:binding rdf:nodeID="r55c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Diskless_workstations"/></res:binding>
+      <res:binding rdf:nodeID="r55c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Diskless workstations</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r56">
+      <res:binding rdf:nodeID="r56c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Cloud_storage_gateways"/></res:binding>
+      <res:binding rdf:nodeID="r56c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Cloud storage gateways</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r57">
+      <res:binding rdf:nodeID="r57c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Cloud_computing_providers"/></res:binding>
+      <res:binding rdf:nodeID="r57c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Cloud computing providers</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r58">
+      <res:binding rdf:nodeID="r58c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Cloud_applications"/></res:binding>
+      <res:binding rdf:nodeID="r58c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Cloud applications</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r59">
+      <res:binding rdf:nodeID="r59c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Cloud_infrastructure"/></res:binding>
+      <res:binding rdf:nodeID="r59c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Cloud infrastructure</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r60">
+      <res:binding rdf:nodeID="r60c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Cloud_storage"/></res:binding>
+      <res:binding rdf:nodeID="r60c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Cloud storage</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r61">
+      <res:binding rdf:nodeID="r61c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Cloud_clients"/></res:binding>
+      <res:binding rdf:nodeID="r61c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Cloud clients</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r62">
+      <res:binding rdf:nodeID="r62c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Infrastructure_as_a_Service"/></res:binding>
+      <res:binding rdf:nodeID="r62c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Infrastructure as a Service</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r63">
+      <res:binding rdf:nodeID="r63c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Cloud_gaming"/></res:binding>
+      <res:binding rdf:nodeID="r63c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Cloud gaming</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r64">
+      <res:binding rdf:nodeID="r64c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:DEC_people"/></res:binding>
+      <res:binding rdf:nodeID="r64c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">DEC people</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r65">
+      <res:binding rdf:nodeID="r65c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Amiga_people"/></res:binding>
+      <res:binding rdf:nodeID="r65c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Amiga people</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r66">
+      <res:binding rdf:nodeID="r66c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:SGI_people"/></res:binding>
+      <res:binding rdf:nodeID="r66c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">SGI people</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r67">
+      <res:binding rdf:nodeID="r67c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Electronic_Arts_employees"/></res:binding>
+      <res:binding rdf:nodeID="r67c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Electronic Arts employees</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r68">
+      <res:binding rdf:nodeID="r68c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:ICL_people"/></res:binding>
+      <res:binding rdf:nodeID="r68c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">ICL people</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r69">
+      <res:binding rdf:nodeID="r69c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:American_computer_businesspeople"/></res:binding>
+      <res:binding rdf:nodeID="r69c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">American computer businesspeople</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r70">
+      <res:binding rdf:nodeID="r70c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Apple_Inc._employees"/></res:binding>
+      <res:binding rdf:nodeID="r70c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Apple Inc. employees</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r71">
+      <res:binding rdf:nodeID="r71c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:IBM_employees"/></res:binding>
+      <res:binding rdf:nodeID="r71c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">IBM employees</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r72">
+      <res:binding rdf:nodeID="r72c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Microsoft_employees"/></res:binding>
+      <res:binding rdf:nodeID="r72c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Microsoft employees</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r73">
+      <res:binding rdf:nodeID="r73c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Sun_Microsystems_people"/></res:binding>
+      <res:binding rdf:nodeID="r73c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Sun Microsystems people</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r74">
+      <res:binding rdf:nodeID="r74c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Businesspeople_in_software"/></res:binding>
+      <res:binding rdf:nodeID="r74c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Businesspeople in software</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r75">
+      <res:binding rdf:nodeID="r75c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Web_applications"/></res:binding>
+      <res:binding rdf:nodeID="r75c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Web applications</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r76">
+      <res:binding rdf:nodeID="r76c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Web_2.0"/></res:binding>
+      <res:binding rdf:nodeID="r76c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Web 2.0</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r77">
+      <res:binding rdf:nodeID="r77c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Terminal_emulators"/></res:binding>
+      <res:binding rdf:nodeID="r77c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Terminal emulators</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r78">
+      <res:binding rdf:nodeID="r78c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Cloud_computing"/></res:binding>
+      <res:binding rdf:nodeID="r78c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Cloud computing</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r79">
+      <res:binding rdf:nodeID="r79c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Thin_clients"/></res:binding>
+      <res:binding rdf:nodeID="r79c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Thin clients</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r80">
+      <res:binding rdf:nodeID="r80c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Computer_terminals"/></res:binding>
+      <res:binding rdf:nodeID="r80c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Computer terminals</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r81">
+      <res:binding rdf:nodeID="r81c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Remote_desktop"/></res:binding>
+      <res:binding rdf:nodeID="r81c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Remote desktop</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r82">
+      <res:binding rdf:nodeID="r82c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Mainframe_computers"/></res:binding>
+      <res:binding rdf:nodeID="r82c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Mainframe computers</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r83">
+      <res:binding rdf:nodeID="r83c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Clients"/></res:binding>
+      <res:binding rdf:nodeID="r83c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Clients</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r84">
+      <res:binding rdf:nodeID="r84c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Servers"/></res:binding>
+      <res:binding rdf:nodeID="r84c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Servers</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r85">
+      <res:binding rdf:nodeID="r85c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Middleware"/></res:binding>
+      <res:binding rdf:nodeID="r85c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Middleware</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r86">
+      <res:binding rdf:nodeID="r86c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Ubiquitous_computing"/></res:binding>
+      <res:binding rdf:nodeID="r86c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Ubiquitous computing</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r87">
+      <res:binding rdf:nodeID="r87c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Consistency_models"/></res:binding>
+      <res:binding rdf:nodeID="r87c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Consistency models</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r88">
+      <res:binding rdf:nodeID="r88c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Web_operating_systems"/></res:binding>
+      <res:binding rdf:nodeID="r88c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Web operating systems</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r89">
+      <res:binding rdf:nodeID="r89c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Multi-agent_systems"/></res:binding>
+      <res:binding rdf:nodeID="r89c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Multi-agent systems</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r90">
+      <res:binding rdf:nodeID="r90c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Web_services"/></res:binding>
+      <res:binding rdf:nodeID="r90c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Web services</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r91">
+      <res:binding rdf:nodeID="r91c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Grid_computing"/></res:binding>
+      <res:binding rdf:nodeID="r91c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Grid computing</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r92">
+      <res:binding rdf:nodeID="r92c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Peer-to-peer_computing"/></res:binding>
+      <res:binding rdf:nodeID="r92c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Peer-to-peer computing</res:value></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r93">
+      <res:binding rdf:nodeID="r93c0"><res:variable>con</res:variable><res:value rdf:resource="http://dbpedia.org/resource/Category:Cluster_computing"/></res:binding>
+      <res:binding rdf:nodeID="r93c1"><res:variable>prefLab</res:variable><res:value xml:lang="en">Cluster computing</res:value></res:binding>
+    </res:solution>
+  </rdf:Description>
+</rdf:RDF>
