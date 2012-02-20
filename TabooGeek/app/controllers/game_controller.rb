@@ -32,6 +32,7 @@ class GameController < ApplicationController
     
     indice = params[:indice]
     if indice != nil
+      indice = indice.downcase
       #First we search if the item is already in database
       query2 =  "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n"
       query2 += "SELECT ?altLabel ?element ?weight WHERE {\n"

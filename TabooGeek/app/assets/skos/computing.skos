@@ -18,23 +18,23 @@
 		
 		<skos:prefLabel>Informatique</skos:prefLabel>
 		<tabooGeek:element rdf:parseType='Resource'>
-			<skos:altLabel>Ordinateur</skos:altLabel>
+			<skos:altLabel>ordinateur</skos:altLabel>
 			<tabooGeek:weight>1</tabooGeek:weight>
 		</tabooGeek:element>
 		<tabooGeek:element rdf:parseType='Resource'>
-			<skos:altLabel>Connexion</skos:altLabel>
+			<skos:altLabel>connexion</skos:altLabel>
 			<tabooGeek:weight>1</tabooGeek:weight>
 		</tabooGeek:element>
 		<tabooGeek:element rdf:parseType='Resource'>
-			<skos:altLabel>Serveur</skos:altLabel>
+			<skos:altLabel>serveur</skos:altLabel>
 			<tabooGeek:weight>1</tabooGeek:weight>
 		</tabooGeek:element>
 		<tabooGeek:element rdf:parseType='Resource'>
-			<skos:altLabel>Technologie</skos:altLabel>
+			<skos:altLabel>technologie</skos:altLabel>
 			<tabooGeek:weight>1</tabooGeek:weight>
 		</tabooGeek:element>
 		<tabooGeek:element rdf:parseType='Resource'>
-			<skos:altLabel>Donnée</skos:altLabel>
+			<skos:altLabel>donnée</skos:altLabel>
 			<tabooGeek:weight>1</tabooGeek:weight>
 		</tabooGeek:element>
 	</skos:Concept>
@@ -46,23 +46,23 @@
 		
 		<skos:prefLabel>Tableur</skos:prefLabel>
 		<tabooGeek:element rdf:parseType='Resource'>
-			<skos:altLabel>Feuille de calcul</skos:altLabel>
+			<skos:altLabel>feuille de calcul</skos:altLabel>
 			<tabooGeek:weight>1</tabooGeek:weight>
 		</tabooGeek:element>
 		<tabooGeek:element rdf:parseType='Resource'>
-			<skos:altLabel>Word</skos:altLabel>
+			<skos:altLabel>word</skos:altLabel>
 			<tabooGeek:weight>1</tabooGeek:weight>
 		</tabooGeek:element>
 		<tabooGeek:element rdf:parseType='Resource'>
-			<skos:altLabel>Excel</skos:altLabel>
+			<skos:altLabel>excel</skos:altLabel>
 			<tabooGeek:weight>1</tabooGeek:weight>
 		</tabooGeek:element>
 		<tabooGeek:element rdf:parseType='Resource'>
-			<skos:altLabel>Programme</skos:altLabel>
+			<skos:altLabel>programme</skos:altLabel>
 			<tabooGeek:weight>1</tabooGeek:weight>
 		</tabooGeek:element>
 		<tabooGeek:element rdf:parseType='Resource'>
-			<skos:altLabel>Tableau</skos:altLabel>
+			<skos:altLabel>tableau</skos:altLabel>
 			<tabooGeek:weight>1</tabooGeek:weight>
 		</tabooGeek:element>
 	</skos:Concept>
@@ -74,23 +74,23 @@
 		
 		<skos:prefLabel>Disque dur</skos:prefLabel>
 		<tabooGeek:element rdf:parseType='Resource'>
-			<skos:altLabel>Mémoire</skos:altLabel>
+			<skos:altLabel>mémoire</skos:altLabel>
 			<tabooGeek:weight>1</tabooGeek:weight>
 		</tabooGeek:element>
 		<tabooGeek:element rdf:parseType='Resource'>
-			<skos:altLabel>Cluster</skos:altLabel>
+			<skos:altLabel>cluster</skos:altLabel>
 			<tabooGeek:weight>1</tabooGeek:weight>
 		</tabooGeek:element>
 		<tabooGeek:element rdf:parseType='Resource'>
-			<skos:altLabel>Octet</skos:altLabel>
+			<skos:altLabel>octet</skos:altLabel>
 			<tabooGeek:weight>1</tabooGeek:weight>
 		</tabooGeek:element>
 		<tabooGeek:element rdf:parseType='Resource'>
-			<skos:altLabel>Cylindre</skos:altLabel>
+			<skos:altLabel>cylindre</skos:altLabel>
 			<tabooGeek:weight>1</tabooGeek:weight>
 		</tabooGeek:element>
 		<tabooGeek:element rdf:parseType='Resource'>
-			<skos:altLabel>ROM</skos:altLabel>
+			<skos:altLabel>rom</skos:altLabel>
 			<tabooGeek:weight>1</tabooGeek:weight>
 		</tabooGeek:element>
 	</skos:Concept>
@@ -102,23 +102,23 @@
 		
 		<skos:prefLabel>Clavier</skos:prefLabel>
 		<tabooGeek:element rdf:parseType='Resource'>
-			<skos:altLabel>Périphérique</skos:altLabel>
+			<skos:altLabel>périphérique</skos:altLabel>
 			<tabooGeek:weight>1</tabooGeek:weight>
 		</tabooGeek:element>
 		<tabooGeek:element rdf:parseType='Resource'>
-			<skos:altLabel>Touche</skos:altLabel>
+			<skos:altLabel>touche</skos:altLabel>
 			<tabooGeek:weight>1</tabooGeek:weight>
 		</tabooGeek:element>
 		<tabooGeek:element rdf:parseType='Resource'>
-			<skos:altLabel>Interface</skos:altLabel>
+			<skos:altLabel>interface</skos:altLabel>
 			<tabooGeek:weight>1</tabooGeek:weight>
 		</tabooGeek:element>
 		<tabooGeek:element rdf:parseType='Resource'>
-			<skos:altLabel>Plat</skos:altLabel>
+			<skos:altLabel>plat</skos:altLabel>
 			<tabooGeek:weight>1</tabooGeek:weight>
 		</tabooGeek:element>
 		<tabooGeek:element rdf:parseType='Resource'>
-			<skos:altLabel>Souris</skos:altLabel>
+			<skos:altLabel>souris</skos:altLabel>
 			<tabooGeek:weight>1</tabooGeek:weight>
 		</tabooGeek:element>
 	</skos:Concept>
