@@ -8,7 +8,17 @@ class GameController < ApplicationController
     endpoint = 'http://zouig.org:8081/sparql/'
     endpointUpdate = 'http://zouig.org:8081/update/'
     
+    
+    
+    query =  "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n"
+    query += "SELECT ?prefLabel WHERE {\n"
+    query += "?concept <http://www.w3.org/2004/02/skos/core#prefLabel> ?prefLabel }"
+    store = FourStore::Store.new endpoint
+    @wordsCount = store.select(query).length
+    
     @word = params[:word]
+    
+    
     
     query =  "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n"
     query += "SELECT ?prefLabel ?concept ?altLabel ?element ?weight WHERE {\n"
@@ -18,8 +28,6 @@ class GameController < ApplicationController
     query += "?element <http://TabooGeek.zouig.org/TabooGeek-schema#weight> ?weight ."
     query += "FILTER regex(?prefLabel, '" + @word.capitalize + "')} ORDER BY DESC(?weight) LIMIT 5"
     
- 
-    store = FourStore::Store.new endpoint
     @words = store.select(query)
     
     indice = params[:indice]

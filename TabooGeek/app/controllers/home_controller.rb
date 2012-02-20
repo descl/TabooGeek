@@ -17,5 +17,7 @@ class HomeController < ApplicationController
     store = FourStore::Store.new endpoint
     @words = store.select(query)
     
+    @wordsCount = @words.length
+    
   end
 end
