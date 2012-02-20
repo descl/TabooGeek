@@ -6,7 +6,7 @@
 			
 			<ul>
 			<% @words.each do |word| %>
-				<li> <%= word['altLabel'] %></li>
+				<li> <%= word['altLabel'] %>  (<%= word['weight'] %>)</li>
 			<% end %>
 			</ul>
 		</div>

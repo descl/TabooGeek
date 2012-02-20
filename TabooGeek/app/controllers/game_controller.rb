@@ -5,36 +5,62 @@ require '4store-ruby'
 
 class GameController < ApplicationController
   def game
+    endpoint = 'http://zouig.org:8081/sparql/'
+    endpointUpdate = 'http://zouig.org:8081/update/'
+    
     @word = params[:word]
     
-    #query =  "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n"
-    #query += "SELECT ?altLabel WHERE { ?concept skos:prefLabel ?altLabel }"
-    
     query =  "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n"
-    query += "SELECT ?concept ?altLabel ?element ?test WHERE {\n"
+    query += "SELECT ?prefLabel ?concept ?altLabel ?element ?weight WHERE {\n"
     query += "?concept <http://www.w3.org/2004/02/skos/core#prefLabel> ?prefLabel ."
     query += "?concept <http://TabooGeek.zouig.org/TabooGeek-schema#element> ?element ."
     query += "?element <http://www.w3.org/2004/02/skos/core#altLabel> ?altLabel ."
-    query += "FILTER regex(?prefLabel, '" + @word.capitalize + "')}"
+    query += "?element <http://TabooGeek.zouig.org/TabooGeek-schema#weight> ?weight ."
+    query += "FILTER regex(?prefLabel, '" + @word.capitalize + "')} ORDER BY DESC(?weight) LIMIT 5"
     
-    #@tQuery = query
-    
-    endpoint = 'http://zouig.org:8081/sparql/'
  
-    store = FourStore::Store.new 'http://zouig.org:8081/sparql/'
+    store = FourStore::Store.new endpoint
     @words = store.select(query)
-    print @words
     
     indice = params[:indice]
     if indice != nil
-      response = store.add('http://tabooGeek.zouig.org/#NewRelations', "
-        <"+@words[0]['concept']+"> <http://www.w3.org/2004/02/skos/core#altLabel> \"" + indice + "\".
-        "); 
-
+      #First we search if the item is already in database
+      query2 =  "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n"
+      query2 += "SELECT ?altLabel ?element ?weight WHERE {\n"
+      query2 += "<" + @words[0]['concept'] + "> <http://TabooGeek.zouig.org/TabooGeek-schema#element> ?element ."
+      query2 += "?element <http://www.w3.org/2004/02/skos/core#altLabel> ?altLabel ."
+      query2 += "?element <http://TabooGeek.zouig.org/TabooGeek-schema#weight> ?weight ."
+      query2 += "FILTER regex(?altLabel, '" + indice + "')}"
+      
+      response = store.select(query2)
+      print(query2)
+      print(response)
+      if response != nil && response.length >0
+        #word is in batabase
+        score = String(Integer(response[0]['weight']) + 1)
+        
+        
+        
+        delete = "DELETE {"
+        delete+= "?element <http://www.w3.org/2004/02/skos/core#altLabel> \"" + indice + "\"."
+        delete+= "} WHERE { "
+        delete+= "<" + @words[0]['concept'] + "> <http://TabooGeek.zouig.org/TabooGeek-schema#element> ?element"
+        delete+= "}"
+        RestClient.post endpointUpdate, :update => delete
+        
+        response = store.add('http://tabooGeek.zouig.org/#NewRelations', "
+          <"+@words[0]['concept']+"> <http://TabooGeek.zouig.org/TabooGeek-schema#element> _:a .
+          _:a <http://www.w3.org/2004/02/skos/core#altLabel> \"" + indice + "\".
+          _:a <http://TabooGeek.zouig.org/TabooGeek-schema#weight> \"" + score + "\" .");      
+        
+      else
+        response = store.add('http://tabooGeek.zouig.org/#NewRelations', "
+          <"+@words[0]['concept']+"> <http://TabooGeek.zouig.org/TabooGeek-schema#element> _:a .
+          _:a <http://www.w3.org/2004/02/skos/core#altLabel> \"" + indice + "\".
+          _:a <http://TabooGeek.zouig.org/TabooGeek-schema#weight> \"1\" ."); 
+      end
       @words = store.select(query)
       puts response
     end
-    
   end
-  
 end
